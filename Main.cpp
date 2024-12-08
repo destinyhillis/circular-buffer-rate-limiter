@@ -96,6 +96,7 @@ int main()
   cout << endl;
 
   // allow the user to set the size of the buffer and make that the limit of attempts
+  // TODO: add a check to make sure the user enters a positive integer for buffer size and time limit
   int buffer_size;
   cout << "Enter the limit of attempts. This will be the size of the circular buffer: ";
   cin >> buffer_size;

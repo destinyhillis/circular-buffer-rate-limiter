@@ -1,4 +1,4 @@
-# **Circular Buffer Rate Limiter**
+# Project Proposal: Circular Buffer Rate Limiter
 
 ## Introduction
 This project aims to implement a Rate Limiter using a circular buffer in C++. A circular buffer is a fixed-size, cyclic data structure that overwrites the oldest elements when it becomes full to efficiently manage space and operations. The circular buffer in this application will efficiently track timestamps of recent actions, enforcing limits on operations within a defined time window.
