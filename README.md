@@ -92,7 +92,6 @@ Too many failed attempts. Please restart program to try again.
 ### CircularBuffer Class
 - **Constructor**: Initializes the buffer with a specified size.
 - **put**: Adds an item to the buffer with the current timestamp.
-- **getItem**: Retrieves and removes the oldest item from the buffer.
 - **isEmpty**: Checks if the buffer is empty.
 - **isFull**: Checks if the buffer is full.
 - **size**: Returns the current number of items in the buffer.
