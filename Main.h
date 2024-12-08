@@ -21,7 +21,6 @@ class CircularBuffer {
   public:
     CircularBuffer(int size);
     void put(string item);
-    vector<pair<string, system_clock::time_point>> getBuffer();
     bool isEmpty();
     bool isFull();
     int size();
