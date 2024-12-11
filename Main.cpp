@@ -51,7 +51,8 @@ bool CircularBuffer::isOldestEntryExpired(int time_limit)
   auto now = system_clock::now();
   auto oldest = buffer[tail].second;
   auto diff = now - oldest;
-  cout << "Oldest entry is " << duration_cast<seconds>(diff).count() << " seconds old and will be removed." << endl;
+  if (diff > seconds(time_limit))
+    cout << "Oldest entry is " << duration_cast<seconds>(diff).count() << " seconds old and will be removed." << endl;
   // return true if the oldest entry is older than the time limit
   return diff > seconds(time_limit);
 }
@@ -96,7 +97,6 @@ int main()
   cout << endl;
 
   // allow the user to set the size of the buffer and make that the limit of attempts
-  // TODO: add a check to make sure the user enters a positive integer for buffer size and time limit
   int buffer_size;
   cout << "Enter the limit of attempts. This will be the size of the circular buffer: ";
   cin >> buffer_size;
