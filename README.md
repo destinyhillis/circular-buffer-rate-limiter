@@ -14,7 +14,6 @@ This project implements a Rate Limiter using a circular buffer in C++. The circu
 - [Usage](#usage)
 - [Code Overview](#code-overview)
   - [CircularBuffer Class](#circularbuffer-class)
-- [Walkthrough Video](#walkthrough-video)
 
 ## Features
 
